@@ -6,7 +6,7 @@
 #    By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 08:56:20 by marisous          #+#    #+#              #
-#    Updated: 2026/10/23 08:56:24 by marisous         ###   ########.fr        #
+#    Updated: 2026/10/23 14:59:44 by marisous         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -61,10 +61,10 @@ LIB_NAME = libft.a
 CUR_DIR = $(shell pwd)
 
 # Where are located the source files
-SRC_FILES = $(shell ls srcs/*)
+SRC_FILES = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c srcs/ft_strlen.c srcs/ft_swap.c
 
-# Location of the source code.
-SRC_DIR = srcs
+# # Location of the source code.
+# SRC_DIR = srcs
 
 # Assignment replacement of the object files *.c --> *.o
 OBJ_FILES = $(SRC_FILES:.c=.o)
