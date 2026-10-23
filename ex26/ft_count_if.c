@@ -6,7 +6,7 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:40:48 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 14:53:16 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 15:19:31 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	ft_count_if(char **tab, int (*f)(char *))
 /* 	char	*myarray[] = {"This", "is", "my", "array", "\0"}; */
 /* 	printf("Main with no args.\n"); */
 /* 	n_array = ft_count_if(myarray, ft_print); */
-/* 	printf("'This' 'is' 'my' 'array' '\\0' array has %d elements.\n", n_array); */
+/* 	printf("'This''is''my''array''\\0' array has %d elements.\n", n_array); */
 /* 	return (0); */
 /* } */
 
