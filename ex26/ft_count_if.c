@@ -6,40 +6,41 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:40:48 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 15:19:31 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 16:52:03 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/* #include <stdio.h> */
 
 int	ft_count_if(char **tab, int (*f)(char *));
-int	ft_strlen(char *str);
+/* int	ft_strlen(char *str); */
 /* int	ft_print(char *str); */
 
-int	ft_strlen(char *str)
-{
-	int	len;
+/* int	ft_strlen(char *str) */
+/* { */
+/* 	int	len; */
 
-	len = 0;
-	while (*str != '\0')
-	{
-		len++;
-		str++;
-	}
-	return (len);
-}
+/* 	len = 0; */
+/* 	while (*str != '\0') */
+/* 	{ */
+/* 		len++; */
+/* 		str++; */
+/* 	} */
+/* 	return (len); */
+/* } */
 
 int	ft_count_if(char **tab, int (*f)(char *))
 {
-	int	len_array;
+	int	len_array_cond;
 
-	len_array = 0;
-	while (ft_strlen(*tab))
+	len_array_cond = 0;
+	while (*tab)
 	{
-		len_array += f(*tab);
+		if (f(*tab) == 1)
+			len_array_cond++;
 		tab++;
 	}
-	return (len_array);
+	return (len_array_cond);
 }
 
 /* int	main(void) */
