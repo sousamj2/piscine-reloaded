@@ -6,22 +6,37 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:55:38 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:55:38 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 14:46:38 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_str(char *str);
+void	ft_putchar(char *c);
 int		ft_strcmp(char *s1, char *s2);
 void	ft_swap(char **argv, int iarg, int jarg);
+
+/* void	ft_putchar(char *c) */
+/* { */
+/* 	write(1, c, 1); */
+/* } */
+
+void	ft_putstr(char *str)
+{
+	while (*str != '\0')
+	{
+		ft_putchar(str);
+		str++;
+	}
+	ft_putchar("\n");
+}
 
 void	ft_swap(char **argv, int iarg, int jarg)
 {
 	char	*temporary_pointer;
 
 	temporary_pointer = argv[iarg];
-	argv[iarg] = argv[jarg];
+	argv [iarg] = argv[jarg];
 	argv [jarg] = temporary_pointer;
 }
 
@@ -35,16 +50,6 @@ int	ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return (0);
-}
-
-void	ft_print_str(char *str)
-{
-	while (*str != '\0')
-	{
-		write(1, str, 1);
-		str++;
-	}
-	write(1, "\n", 1);
 }
 
 int	main(int argn, char **test)
@@ -69,7 +74,7 @@ int	main(int argn, char **test)
 	iarg = 1;
 	while (iarg < argn)
 	{
-		ft_print_str(argv[iarg]);
+		ft_putstr(argv[iarg]);
 		iarg++;
 	}
 	return (0);

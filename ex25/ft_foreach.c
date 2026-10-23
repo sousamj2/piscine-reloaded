@@ -6,13 +6,13 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:35:36 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 14:08:23 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 14:52:01 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/* #include <stdio.h> */
 
-void	ft_print(int nb);
+/* void	ft_print(int nb); */
 
 void	ft_foreach(int *tab, int length, void (*f)(int));
 
@@ -29,17 +29,15 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 	return ;
 }
 
-int	main(void)
-{
-	int	myarray[7];
+/* int	main(void) */
+/* { */
+/* 	int	myarray[] = {2, 5, 3, 2, -1, 0, 3}; */
+/* 	printf("Main with no args.\n"); */
+/* 	ft_foreach(myarray, 7, ft_print); */
+/* 	return (0); */
+/* } */
 
-	myarray = {2, 5, 3, 2, -1, 0, 3};
-	printf("Main with no args.\n");
-	ft_foreach(myarray, 7, ft_print);
-	return (0);
-}
-
-void	ft_print(int nb)
-{
-	printf("%d, ", nb);
-}
+/* void	ft_print(int nb) */
+/* { */
+/* 	printf("%d, ", nb); */
+/* } */

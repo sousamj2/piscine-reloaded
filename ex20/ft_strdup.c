@@ -6,11 +6,12 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:55:33 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:55:34 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 14:48:09 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+/* #include <stdio.h> */
 
 char	*ft_strdup(char *src);
 int		ft_strlen(char *str);
@@ -45,12 +46,12 @@ char	*ft_strdup(char *src)
 	return (ret);
 }
 
-/* #include <stdio.h> */
 /* int	main(void) */
 /* { */
-/* 	char * final; */
-/* 	char * src = "test"; */
+/* 	char	*final; */
+/* 	char	*src; */
 
+/* 	src = "test"; */
 /* 	final = ft_strdup(src); */
 /* 	printf("Copying [%s] to [%s]\n", src, final); */
 /* 	return (0); */
