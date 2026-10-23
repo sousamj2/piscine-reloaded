@@ -6,29 +6,29 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:55:38 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 14:46:38 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 15:47:14 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+/* #include <unistd.h> */
 
-void	ft_putchar(char *c);
+void	ft_putchar(char c);
 int		ft_strcmp(char *s1, char *s2);
 void	ft_swap(char **argv, int iarg, int jarg);
 
-/* void	ft_putchar(char *c) */
+/* void	ft_putchar(char c) */
 /* { */
-/* 	write(1, c, 1); */
+/* 	write(1, &c, 1); */
 /* } */
 
 void	ft_putstr(char *str)
 {
 	while (*str != '\0')
 	{
-		ft_putchar(str);
+		ft_putchar(*str);
 		str++;
 	}
-	ft_putchar("\n");
+	ft_putchar('\n');
 }
 
 void	ft_swap(char **argv, int iarg, int jarg)

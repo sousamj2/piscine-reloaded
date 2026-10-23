@@ -6,28 +6,28 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:55:43 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 14:42:59 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 15:47:27 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* #include <unistd.h> */
 
 void	ft_print_str(char *str);
-void	ft_putchar(char *c);
+void	ft_putchar(char c);
 
-/* void	ft_putchar(char *c) */
+/* void	ft_putchar(char c) */
 /* { */
-/* 	write(1, c, 1); */
+/* 	write(1, &c, 1); */
 /* } */
 
 void	ft_putstr(char *str)
 {
 	while (*str != '\0')
 	{
-		ft_putchar(str);
+		ft_putchar(*str);
 		str++;
 	}
-	ft_putchar("\n");
+	ft_putchar('\n');
 }
 
 int	main(int argn, char *argv[])
