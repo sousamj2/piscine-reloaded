@@ -6,10 +6,11 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:50:22 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:50:23 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 13:51:30 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+
 void	ft_putchar(char *c);
 
 void	ft_putchar(char *c)
@@ -21,19 +22,18 @@ void	ft_print_number(void)
 {
 	char	letter;
 	char	*ptr;
-	
+
 	letter = '0';
 	ptr = &letter;
 	while (letter <= '9')
 	{
 		ft_putchar(ptr);
-		
 		letter++;
 	}
 }
 
-int main(void)
+int	main(void)
 {
-    ft_print_number();
+	ft_print_number();
 	return (0);
 }

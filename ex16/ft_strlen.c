@@ -6,15 +6,17 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:53:47 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:53:51 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 14:04:33 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_strlen(char *str);
 
 int	ft_strlen(char *str)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	while (*str != '\0')
@@ -25,11 +27,11 @@ int	ft_strlen(char *str)
 	return (len);
 }
 
-#include <stdio.h>
-
-int main(void)
+int	main(void)
 {
-	char * str = "ola";
+	char	*str;
+
+	str = "ola";
 	printf("[%s] has [%d] chars", str, ft_strlen(str));
 	return (0);
 }

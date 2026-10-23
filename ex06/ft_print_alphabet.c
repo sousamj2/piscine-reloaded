@@ -6,7 +6,7 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:49:52 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:50:00 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 13:49:31 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -22,7 +22,7 @@ void	ft_print_alphabet(void)
 {
 	char	letter;
 	char	*ptr;
-	
+
 	letter = 'a';
 	ptr = &letter;
 	while (letter <= 'z')
@@ -32,8 +32,8 @@ void	ft_print_alphabet(void)
 	}
 }
 
-int main(void)
+int	main(void)
 {
-    ft_print_alphabet();
+	ft_print_alphabet();
 	return (0);
 }

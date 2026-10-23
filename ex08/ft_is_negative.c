@@ -6,18 +6,18 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:50:42 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 08:50:48 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 13:52:18 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
 void	ft_putchar(char *c);
 
 void	ft_putchar(char *c)
 {
 	write(1, c, 1);
 }
-
 
 void	ft_is_negative(int n)
 {
@@ -31,7 +31,7 @@ void	ft_is_negative(int n)
 
 int	main(void)
 {
-    ft_is_negative(5);
+	ft_is_negative(5);
 	ft_is_negative(-2);
 	ft_is_negative(0);
 	return (0);
