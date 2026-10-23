@@ -7,9 +7,9 @@
 #    By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 08:49:21 by marisous          #+#    #+#              #
-#    Updated: 2026/10/23 15:35:13 by marisous         ###   ########.fr        #
+#    Updated: 2026/10/23 16:02:35 by marisous         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-# find . -name "*.sh" -printf %P | sed 's/\.sh/\n/g'
-find -name "*.sh" | sed 's/\.sh\n/\n/g' | sed 's/\.\///g' 
+find . -name "*.sh" -printf %f | sed 's/\.sh/\n/g'
+# find -name "*.sh" | sed 's/\.sh\n/\n/g' | sed 's/\.\///g' 
 # find . -name "*.sh" | sed 's/\.sh\n/\n/g'
