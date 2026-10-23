@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 17:47:19 by marvin            #+#    #+#             */
-/*   Updated: 2026/10/22 17:49:53 by marvin           ###   ########.fr       */
+/*   Created: 2026/10/23 08:53:34 by marisous          #+#    #+#             */
+/*   Updated: 2026/10/23 08:53:37 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char *c);

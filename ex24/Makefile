@@ -1,3 +1,15 @@
+#******************************************************************************#
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/10/23 08:56:20 by marisous          #+#    #+#              #
+#    Updated: 2026/10/23 08:56:24 by marisous         ###   ########.fr        #
+#                                                                              #
+#******************************************************************************#
+
 #### Declarations
 # = recursive assignment: the last assignment is what if counts (goes backwards)
 # := simple assignment: The assignment happens each time.
