@@ -2,3 +2,7 @@ run
 *.o
 libft.a
 /ex27/ft_display_file
+/Instructions.pdf
+/ex00/test*
+/ex03/*.sh
+/ex03/test/
