@@ -6,7 +6,7 @@
 #    By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 08:56:20 by marisous          #+#    #+#              #
-#    Updated: 2026/10/23 14:59:44 by marisous         ###   ########.fr        #
+#    Updated: 2026/10/23 16:18:27 by marisous         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -57,11 +57,16 @@ CFLAGS += -Iincludes
 # The name of the static library
 LIB_NAME = libft.a
 
-# Get the current directory
-CUR_DIR = $(shell pwd)
+# # Get the current directory
+# CUR_DIR = $(shell pwd)
 
 # Where are located the source files
-SRC_FILES = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c srcs/ft_strlen.c srcs/ft_swap.c
+SRC_FILES = \
+	srcs/ft_putchar.c \
+	srcs/ft_putstr.c \
+	srcs/ft_strcmp.c \
+	srcs/ft_strlen.c \
+	srcs/ft_swap.c
 
 # # Location of the source code.
 # SRC_DIR = srcs
@@ -94,7 +99,6 @@ $(LIB_NAME):  $(OBJ_FILES)
 # Remove object files
 clean: 
 	rm -vf $(OBJ_FILES)
-	./clean_emacs
 
 # Remove the library file
 fclean:

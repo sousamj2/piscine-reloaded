@@ -6,7 +6,7 @@
 #    By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/23 08:44:33 by marisous          #+#    #+#              #
-#    Updated: 2026/10/23 14:55:16 by marisous         ###   ########.fr        #
+#    Updated: 2026/10/23 16:19:08 by marisous         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 CC = cc
@@ -29,8 +29,6 @@ all: $(LIB_NAME)
 	$(CC) $(CFLAGS) main.c -o $(PRG_NAME) -L. -lft
 
 $(LIB_NAME) : $(OBJ_FILES)
-	# @echo Create static library with ar
-	# @echo "The flags are: r(eplace objects in library), c(reate lib), s(ymbol index creation)."
 	ar rcs $(LIB_NAME) $(OBJ_FILES)
 
 %.o : %.c
@@ -41,9 +39,5 @@ clean:
 
 fclean: 
 	rm -fv $(LIB_NAME) $(PRG_NAME)
-
-eclean:
-	rm -fv compile_commands.json
-	bear -- make
 
 re: fclean all
