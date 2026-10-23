@@ -1,2 +1,4 @@
 run
 *.o
+libft.a
+/ex27/ft_display_file
