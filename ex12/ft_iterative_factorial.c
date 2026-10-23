@@ -6,7 +6,7 @@
 /*   By: marisous <marisous@student.42lisb...>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 08:51:40 by marisous          #+#    #+#             */
-/*   Updated: 2026/10/23 16:13:32 by marisous         ###   ########.fr       */
+/*   Updated: 2026/10/23 16:55:43 by marisous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_iterative_factorial(int nb)
 {
 	int	result;
 
-	if (nb < 0)
+	if (nb < 0 || nb > 12)
 		return (0);
 	result = 1;
 	while (nb > 1)
